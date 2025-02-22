@@ -240,7 +240,7 @@ const projects = [
     source_code_link: "https://www.codingofworld.com/",
   },
   {
-    name: "Car Clen Plus",
+    name: "Car Clean Plus",
     description:
       "Car Clean Plus offers professional car cleaning and detailing services, ensuring your vehicle looks spotless and well-maintained. We provide high-quality, eco-friendly cleaning solutions for a sparkling, refreshed ride every time. ",
     tags: [
