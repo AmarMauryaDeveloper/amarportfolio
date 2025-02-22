@@ -39,11 +39,12 @@ const ProjectCard = ({
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
-              <img
+              Live
+              {/* <img
                 src={github}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
-              />
+              /> */}
             </div>
           </div>
         </div>
@@ -81,17 +82,22 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          The following projects showcase my skills and experience through
+          real-world applications of my work. Each project includes a brief
+          description with links to code repositories and live demos. These
+          projects highlight my ability to solve complex problems, work with
+          various technologies, and manage projects efficiently.
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap gap-7 ">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard
+            key={`project-${index}`}
+            index={index}
+            {...project}
+            className="bg-cover"
+          />
         ))}
       </div>
     </>
