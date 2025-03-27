@@ -24,7 +24,10 @@ import {
   tripguide,
   threejs,
 } from "../assets";
-
+import difmo from "../assets/difmot.png";
+import coding from "../assets/codin.png";
+import car from "../assets/car.png";
+import indecor from "../assets/indecorlko.png";
 export const navLinks = [
   {
     id: "about",
@@ -215,7 +218,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "src/assets/difmot.png",
+    image: difmo,
     source_code_link: "https://www.difmo.com/",
   },
   {
@@ -236,7 +239,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "src/assets/codin.png",
+    image: coding,
     source_code_link: "https://www.codingofworld.com/",
   },
   {
@@ -257,8 +260,29 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: "src/assets/car.png",
+    image: car,
     source_code_link: "https://www.carcleanplus.com/",
+  },
+  {
+    name: "Indecorlko",
+    description:
+      "Transform your spaces with Indecor LKO, offering expert interior design, home décor, and modular kitchen solutions in Lucknow. ",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "emailjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: indecor,
+    source_code_link: "https://www.indecorlko.com/",
   },
 ];
 
