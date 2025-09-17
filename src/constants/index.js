@@ -23,11 +23,14 @@ import {
   jobit,
   tripguide,
   threejs,
+  firebase,
 } from "../assets";
 import difmo from "../assets/difmot.png";
 import coding from "../assets/codin.png";
 import car from "../assets/car.png";
 import indecor from "../assets/indecorlko.png";
+import akshet from "../assets/akshet.png";
+import tolet from '../assets/tolet.png';
 export const navLinks = [
   {
     id: "about",
@@ -111,16 +114,16 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
+  {
+    name: "firebase",
+    icon: firebase,
+  },
 ];
 
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Coding of World",
+    company_name: "Difmo",
     icon: "src/assets/coding.svg",
     iconBg: "#383E56",
     // date: "March 2020 - April 2021",
@@ -146,7 +149,7 @@ const experiences = [
   },
   {
     title: "Web Developer",
-    company_name: "Car Clan Plaus",
+    company_name: "difmo",
     icon: "src/assets/carclean.png",
     iconBg: "#383E56",
     // date: "Jan 2022 - Jan 2023",
@@ -157,19 +160,19 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-  // {
-  //   title: "Full stack Developer",
-  //   company_name: "",
-  //   icon: meta,
-  //   iconBg: "#E6DEDD",
-  //   // date: "Jan 2023 - Present",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
+  {
+    title: "Full stack Developer",
+    company_name: "Difmo",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    // date: "Jan 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
 ];
 
 const testimonials = [
@@ -266,7 +269,7 @@ const projects = [
   {
     name: "Indecorlko",
     description:
-      "Transform your spaces with Indecor LKO, offering expert interior design, home décor, and modular kitchen solutions in Lucknow. ",
+      "Transform your spaces with Indecor LKO, a professional interior design and décor platform offering expert services in home décor, modular kitchens, and personalized design solutions in Lucknow.",
     tags: [
       {
         name: "react",
@@ -283,6 +286,46 @@ const projects = [
     ],
     image: indecor,
     source_code_link: "https://www.indecorlko.com/",
+  },
+    {
+    name: "Akshat Pragati",
+    description:
+     "The site is titled AkshatPragati. It appears to be a personal/business website; looks like it might include content about skills, services, or projects",tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firbase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: akshet,
+    source_code_link: "https://www.akshatpragati.com/",
+  },
+   {
+    name: "TO-LET4RENT",
+    description:
+     "Develop a platform where users can browse, list, and manage rental properties in a seamless and user-friendly way. The goal was to simplify the rental process by connecting property owners and tenants on one platform.",tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firbase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tolet,
+    source_code_link: "https://www.toletforrent.com/",
   },
 ];
 

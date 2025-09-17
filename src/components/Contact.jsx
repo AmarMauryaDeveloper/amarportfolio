@@ -12,6 +12,7 @@ const Contact = () => {
   const [form, setForm] = useState({
     name: "",
     email: "",
+    phone: "", // ✅ Added phone field
     message: "",
   });
 
@@ -26,22 +27,21 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    // Debugging to ensure form data is correct before submission
     console.log("Sending Data:", form);
 
     emailjs
       .sendForm(
-        "service_g064j8l", // ✅ Correct Service ID
-        "template_b4wbjnj", // ✅ Correct Template ID
+        "service_66i79tp", // ✅ Correct Service ID
+        "template_gwt9rdi", // ✅ Correct Template ID
         formRef.current,
-        "Df3qo6O7hmYaucU8m" // ✅ Correct Public Key
+        "qO_LpCF8hlypP4X13" // ✅ Correct Public Key
       )
       .then(
         () => {
           setLoading(false);
           alert("Thank you! I will get back to you as soon as possible.");
 
-          setForm({ name: "", email: "", message: "" });
+          setForm({ name: "", email: "", phone: "", message: "" });
         },
         (error) => {
           setLoading(false);
@@ -77,6 +77,7 @@ const Contact = () => {
               required
             />
           </label>
+
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Email</span>
             <input
@@ -89,6 +90,21 @@ const Contact = () => {
               required
             />
           </label>
+
+          {/* ✅ Phone Number field */}
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your Phone</span>
+            <input
+              type="tel"
+              name="phone"
+              value={form.phone}
+              onChange={handleChange}
+              placeholder="What's your phone number?"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              required
+            />
+          </label>
+
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
@@ -115,7 +131,6 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        {/* Ensure EarthCanvas does not have NaN values in geometry */}
         <EarthCanvas />
       </motion.div>
     </div>

@@ -29,7 +29,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-
+import firebase from "./tech/firebase.svg";
 export {
   logo,
   backend,
@@ -39,6 +39,7 @@ export {
   github,
   menu,
   close,
+  firebase,
   css,
   docker,
   figma,
